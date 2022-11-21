@@ -1,0 +1,7 @@
+on:
+  workflow_call:
+
+jobs:
+  echo:
+    steps:
+      - run: echo "HELLO !"
