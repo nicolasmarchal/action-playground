@@ -1,15 +1,16 @@
-name: playground
+name: deploy production
 on:
   push:
     branches:
       - 'main'
 env:
   SALUT: 'salut'
-environment: prod
+
 
 jobs:
   echo:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - run: echo ${{secrets.JWT_SECRET}}
       - run: echo ${{env.SALUT}}
