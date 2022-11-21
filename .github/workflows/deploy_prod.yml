@@ -4,7 +4,7 @@ on:
     branches:
       - 'main'
 env:
-  SALUT: 'salut'
+  SALUT: 'salut 213'
 
 
 jobs:
@@ -12,5 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     environment: prod
     steps:
-      - run: echo ${{secrets.JWT_SECRET}}
+      - run: echo ${{secrets.TEST}}
       - run: echo ${{env.SALUT}}

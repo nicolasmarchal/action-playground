@@ -10,5 +10,5 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{secrets.JWT_SECRET}}
+      - run: echo ${{secrets.TEST}}
       - run: echo ${{env.SALUT}}
